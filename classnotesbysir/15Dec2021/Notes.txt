@@ -1,0 +1,20 @@
+
+
+Project: Ecommerce
+
+Team: 5 
+
+Login - Member 1
+Register - 2
+Contact  - 3
+Cart  - 4
+Payment - 5 
+
+
+Source Code Management Providers:
+
+Github, SVN,TFS....
+
+
+
+
