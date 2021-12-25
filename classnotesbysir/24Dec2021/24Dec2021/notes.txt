@@ -1,0 +1,108 @@
+CSS: Cascading Style Sheets
+
+Selectors:
+
+element selector :
+
+
+<html>
+    <head>
+
+          <style>
+          
+             h1{
+                 text-align: center
+             }
+           
+          </style>
+
+    </head>
+
+     <body>
+
+         <h1>This is h1</h1>
+
+          <h1>This is another h1</h1>
+          
+
+     </body>
+</html>
+
+
+class selector:
+
+
+<html>
+    <head>
+
+          <style>
+          
+              .basictheme{
+                   text-align: center;
+                   background-color:grey;
+              }
+              .redcolor{
+                  color:red  
+              }   
+           
+          </style>
+
+    </head>
+
+     <body>
+
+          <h1  class="basictheme redcolor">This is header</h1>
+
+
+     </body>
+</html>
+
+
+id selector:
+
+<html>
+    <head>
+
+          <style>
+          
+              #id1{
+                   text-align: center;
+                  
+              }
+
+            
+          </style>
+
+    </head>
+
+     <body>
+
+          <h1  id="id1">This is header</h1>
+          <!-- <h1  id="basictheme">This is header</h1> -->
+           
+           </script>
+
+
+     </body>
+</html>
+
+3 Types of CSS:
+
+1. Inline : 
+
+ The css will be applied only to that element.
+
+2. Internal : 
+
+the css will be applied to all the matching elements with in the file.
+
+3. External :
+
+used to reuse the css across multiple web pages.
+
+
+
+
+
+
+
