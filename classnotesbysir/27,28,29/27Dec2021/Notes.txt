@@ -1,0 +1,36 @@
+Colors:
+
+CSS provides around 140 different colors to use for the web pages.
+
+we need to use color property to attach some color to a html element.
+
+
+<html>
+    <head>
+
+         <style>
+         
+            h1{
+              color : #6BC8D0
+            }
+
+         </style>
+
+    </head>
+
+     <body>
+
+        <center> <h1>header</h1> </center>
+
+     </body>
+</html>
+
+
+div:
+
+The div tag is used to divide a web page into different sections based on the 
+requirement.
+
+
+
+
