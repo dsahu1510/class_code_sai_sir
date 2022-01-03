@@ -1,0 +1,114 @@
+Types of Variables:
+
+There are 2 types of Variables,
+
+1. local variables : A  variable which is created inside a function is known as 
+local variable.
+
+Since the variable is accessed with in the function, the scope of the variable is 
+local to the function hence it is known as local variable.
+
+function f1(){
+    // local variable
+    var a=100;
+    console.log(a);
+}
+function f2(){
+    console.log(a);// error
+}
+f1();
+f2();
+
+
+2. global variables:
+
+A variable that is created outside of a function is known as global variable.
+
+The global variables can be accessed by any function in the application.
+
+
+var x=100;// global variable 
+console.log(x);// 100
+function f1(){
+    console.log(x);
+}
+function f2(){
+    console.log(x);
+}
+f1();
+f2();
+
+-----------------
+
+code snippet 2:
+
+
+var x;
+console.log(x);// undefined
+function f1(){
+    x=100;
+    console.log(x); // 100
+}
+function f2(){
+    x=0;
+    console.log(x); // 0
+}
+console.log(x); // undefined
+f1();
+f2();
+console.log(x); // 0
+
+
+--------------------
+Variable Hoisting:
+
+It is a default process where the variables will be declared on the top before the execution.
+
+console.log(a); // undefined
+
+var a=100;
+
+console.log(a); // 100
+
+var a=10;
+
+console.log(a); //10
+
+/*
+
+  var a;
+  console.log(a); // undefined
+  a=100;
+  console.log(a); //100
+  a=10;
+  console.log(a); //10
+
+*/
+
+
+var a=100;
+console.log(a); // 100
+console.log(b); // 
+console.log(c);  //
+
+var b=200;
+var c=300;
+
+/*
+var a,b,c;
+a=100;
+console.log(a); //100
+console.log(b); //undefined
+console.log(c); //undefined
+b=200;
+c=300;
+
+
+*/
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+<html>
+    <head>
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+     <body>
+
+            <i onclick="up()"  class="fa fa-thumbs-up" style="font-size:48px;color:gray"></i> &nbsp;&nbsp;&nbsp; <span id="u">0</span>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+            <i onclick="down()" class="fa fa-thumbs-down" style="font-size:48px;color:gray"></i>  &nbsp;&nbsp;&nbsp; <span id="d">0</span>
+
+              <script>
+
+                  var upCount=0;
+                  var downCount=0;
+
+                 function up(){
+    
+                     upCount = upCount + 1;
+
+                     document.getElementById("u").innerHTML = upCount;
+                     
+
+                 }
+                 function down(){
+                     downCount = downCount + 1;
+
+                     document.getElementById("d").innerHTML = downCount;
+
+
+                 }
+              
+              </script>
+     </body>
+</html>
