@@ -1,0 +1,133 @@
+Datatypes:
+
+Datatype specifies the type of data stored in a variable. 
+
+In JS, We don't specify a datatype while creating a variable.
+
+based on the value assigned to a variable, the datatype is decided.
+
+ex:  var a=100;
+
+the datatype of a is number.
+
+var name= "ravi";
+
+the datatype of name is string.
+
+There are 2 types of Datatypes, 
+
+1. Primitive Types :  number, boolean, string, null, undefined  
+2. Non Primitive Types / advanced types: arrays and objects
+
+
+// Primitive Types 
+
+number:
+
+
+var a=100;
+
+console.log(typeof a);
+
+var b=4.2;
+
+console.log(typeof b);
+
+
+
+boolean:  true or false
+
+var isDone=false;
+
+console.log(typeof isDone);
+
+isDone = 1;
+
+console.log(typeof isDone);
+
+
+strings:
+
+var str1="hello";
+
+console.log(typeof str1);
+
+var str2='hey';
+
+console.log(typeof str2);
+
+Strings are immutable (unmodified) in JS
+
+var firstName="Digital";
+var lastName="Lync";
+
+firstName.concat(lastName); // "Digital Lync"
+
+console.log(firstName);
+
+console.log(firstName.toUpperCase());
+
+console.log(firstName.includes('D'));
+
+
+Problem Statement:
+
+Create a password field , validate that password should be atleast 5 chars. 
+
+ undefined && null:
+
+ var x;
+
+console.log(typeof x);
+
+var y= {};
+
+console.log(y);
+
+y=null;
+
+console.log(typeof y);
+
+Arrays:
+
+An array is a linear data structure which is used to store the data in a sequential  
+order.
+
+In most of the languages, arrays can store only similar items.
+
+In JS, An array can store different types of elements/items.
+
+var array=[1,2,"hello",true,100,200,300,400];
+
+console.log(array);
+
+console.log(array[0]);
+
+console.log(array[1]);
+
+console.log(array[2]);
+
+console.log(array[8]);
+
+console.log(array);
+
+
+
+object:
+
+An object is a representation of an entity, 
+
+the entity can be any real time existence.
+
+ex: customer 
+
+properties: name, address, pan no, account no...
+
+action: withdraw, deposit....
+
+
+
+ 
+
+
+

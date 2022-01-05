@@ -1,0 +1,42 @@
+Javascript???
+
+JS is a scripting/programming language by brenden in 1990's.
+
+
+* It is an interpreted language.
+
+
+Types of Applications:
+
+1. Client Side Apps 
+
+2. Server Side Apps 
+
+3. IOT Apps
+
+4. Block Chain
+
+5. Data Science 
+
+
+Environment Setup:
+
+1. Visual Studio Code 
+2. Nodejs installation 
+
+Variables:
+
+A variable is an identifier which is used to identify some value and use it in application.
+
+syntax:
+
+var var_name;
+
+var username;
+var password;
+var fpassword;
+
+
+
+
+
