@@ -1,0 +1,95 @@
+typeof:
+
+used to know the type of a variable.
+
+var a=1000;
+
+console.log(typeof a);
+
+
+instanceof:
+
+used to check whether a refernce variable is a type of an object.
+
+
+Control Statements:
+
+3 types of CS.
+
+1. Sequential Statements :
+
+if, if-else, switch
+
+if:
+
+  if(test-condition){
+
+      // code
+  }
+
+
+  if-else:
+
+   if(test-condition){
+
+   }
+   else
+   {
+
+   }
+
+
+   var password="abc34";
+
+ if(password.length < 5){
+     console.log("password should not be less than 5");
+ }
+ else{
+     console.log("password accepted");
+ } 
+'
+
+var username="";
+
+  if(username){
+      console.log(true);
+  }
+  else{
+      console.log(false);
+  }
+
+
+  switch:
+
+   when we have multiple choices to be provided for the users, then implement switch case.
+
+   syntax:
+
+      switch(choice){
+          case casevalue1 :  //code 
+
+          case casevalue2 :  //code 
+
+          case   casevalue3 :  //code 
+          .
+          .
+          .
+           default : //code
+      }
+
+
+2. Iterative Statements :
+
+while, do-while, for
+
+3. Jump Statements:
+
+continue, return, break
+
+
+
+
+
+
+
+

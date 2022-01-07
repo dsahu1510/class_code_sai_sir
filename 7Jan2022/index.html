@@ -1,0 +1,38 @@
+<html>
+    <head>
+
+    </head>
+
+     <body>
+
+             <select id="language" onchange="displayContent()">
+                 <option value="telugu">Telugu</option>
+                 <option value="hindi">Hindi</option>
+                 <option value="malayalam">Malayalam</option>
+                 <option value="kannada">Kannada</option>
+
+             </select>
+
+             <h1 id="content"></h1>
+
+              <script>
+                      displayContent();
+                   function displayContent(){
+                        
+                         var choice =  document.getElementById("language").value;
+
+                         var content = document.getElementById("content");
+
+                         switch(choice){
+
+                             case "telugu" :   content.innerHTML = "హలో మిత్రులారా! ఇంట్లోనే ఉండండి, సురక్షితంగా ఉండండి. Omicron రోమింగ్‌లో ఉంది."; break
+                             case "hindi": content.innerHTML = "हैलो दोस्तों! घर में रहें, सुरक्षित रहें। ओमाइक्रोन घूम रहा है।"; break;
+                             case "malayalam": content.innerHTML = "ഹലോ കൂട്ടുകാരെ! വീട്ടിലിരിക്കുക, സുരക്ഷിതമായിരിക്കുക. Omicron റോമിംഗ് ആണ്."; break;
+                             case "kannada":     content.innerHTML="ಹಲೋ ಗೆಳೆಯರೇ! ಮನೆಯಲ್ಲಿಯೇ ಇರಿ, ಸುರಕ್ಷಿತವಾಗಿರಿ. Omicron ರೋಮಿಂಗ್ ಆಗಿದೆ.";
+
+                         }
+                   }
+              </script>
+
+     </body>
+</html>

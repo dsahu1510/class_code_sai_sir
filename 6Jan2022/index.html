@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+    </head>
+
+     <body>
+ 
+         <form>
+           Username :  <input type="text" id="username">
+           Password : <input type="text" id="password"> 
+           <button onclick="login()">Login</button>
+         </form>
+
+          <script>
+          
+            function login(){
+
+                 event.preventDefault();
+
+                var username =  document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+
+              var result =  username == "sai" && password == "sai" ? "login success": "login failure";
+
+              console.log(result);
+
+            }
+          
+          </script>
+
+     </body>
+</html>

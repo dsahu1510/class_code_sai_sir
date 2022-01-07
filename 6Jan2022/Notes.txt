@@ -1,0 +1,144 @@
+Operators:
+
+An operator is a symbol / keyword which provides some functionality.
+
+examples : +, -. >,<, != .......
+
+var a=10, b=20;
+
+c= a+b;
+
++ operator does the addition of two numbers here.
+
+JS provides us different type of Operators such as 
+
+Arithmetic Operators:
+
++,-, *,/,%,++,--
+
+var a=10;
+
+console.log(a++); // prints 10, a=10+1 = 11
+console.log(--a); // a=11-1= 10, prints 10
+console.log(++a);// a=10+1 = 11 , prints 11
+console.log(a++); // prints 11 , a=11+1 = 12
+console.log(++a);// a=12+1 = 13, prints 13
+console.log(a++);// prints 13, a=13+1= 14
+console.log(a--);// prints 14, a=14-1 = 13
+console.log(a); // prints 13
+
+
+
+var a=10, b=30,c="40",d="10d";
+
+console.log(a+b+c);// 4040
+
+console.log(c+a+b);// 401030
+
+console.log(c-a);// "40" - 10 => 40 - 10 = 30
+
+console.log(d+a+b);
+
+console.log(d-a); //
+
+
+Assignment Operators:
+
+=, +=,-=,*=,/=, %=, **= 
+
+var a=10;
+//a=a+20;
+a+=20; // a= a+20
+console.log(a);// 30
+var b=100;
+//b=b-a;
+b-=a; // b= b-a
+console.log(b);
+
+comparision opertors:
+
+<,>,==, ===, >=,<=, !=, ?:
+
+
+
+var a=10, b=20, c="20", d="10s";
+
+console.log(a > b);
+console.log(a < b);
+
+console.log(b == c); // checks only for content
+
+console.log(b === c); // checks for content and also type
+
+console.log(a < c);
+
+console.log(a < d);
+
+console.log(a != b);
+
+//   test condition ? true codeblock : false codeblock
+
+    var result =  a<b ? " a is less than b": "a is not less than b";
+
+    console.log(result)
+
+PS:  Create a login page (username, password)
+
+ &&
+
+username= "sai"
+password ="sai"
+
+
+<html>
+    <head>
+
+    </head>
+
+     <body>
+ 
+         <form>
+           Username :  <input type="text" id="username">
+           Password : <input type="text" id="password"> 
+           <button onclick="login()">Login</button>
+         </form>
+
+          <script>
+          
+            function login(){
+
+                 event.preventDefault();
+
+                var username =  document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+
+              var result =  username == "sai" && password == "sai" ? "login success": "login failure";
+
+              console.log(result);
+
+            }
+          
+          </script>
+
+     </body>
+</html>
+
+
+Logical Operators:
+
+Logical AND (&&), Logical OR(||), Logical NOT(!)
+
+
+var a=10,b=20,c=40;
+
+console.log(a < b && a < c);
+
+console.log(a < b && a > c);
+
+console.log(a > b || a > c);
+
+console.log(a > b || a < c);
+
+
+
+
