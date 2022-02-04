@@ -1,0 +1,34 @@
+<html>
+    <head>
+
+    </head>
+
+     <body>
+            <form>
+                Email: <input type="text" id="email" placeholder="enter emailid">
+                 <button onclick="forgotPassword()">Submit</button>
+            </form>
+
+             <script>
+                function forgotPassword(){
+                      event.preventDefault();
+                      var email = document.getElementById("email").value;
+
+                      // logic of the email sending...
+                     var result = sendEmail(email); 
+                      if(result){
+                          alert("email sent");
+                      }
+                      else{
+                          alert("email not sent");
+                      }
+                }
+
+                function sendEmail(emailId){
+                      return true;
+                }
+             
+             </script>
+
+     </body>
+</html>

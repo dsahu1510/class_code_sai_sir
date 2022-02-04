@@ -1,0 +1,69 @@
+<html>
+    <head>
+
+    </head>
+
+     <body>
+
+         <table border="1" width="100%">
+
+            <thead id="tablehead">
+                
+            </thead>
+
+            <tbody id="tablebody">
+
+            </tbody>
+            
+
+         </table>
+
+         <script>
+          
+          
+             var httpRequest  =  new XMLHttpRequest();
+
+             httpRequest.open("get", "https://jsonplaceholder.typicode.com/users");
+
+             httpRequest.send();
+
+             httpRequest.onreadystatechange = function(){
+                 console.log("state changed", httpRequest.readyState);
+                 console.log("status", httpRequest.status);
+                     if(httpRequest.readyState == 4 && httpRequest.status == 200){
+                       var data= JSON.parse(httpRequest.responseText);
+                        createTableHead(data[1]);
+                        createTableBody(data);
+                     }
+             }         
+             
+             
+             function createTableBody(users){
+                var tbody = " ";
+                var tobdyRef = document.getElementById("tablebody");
+                  for(var i=0;i<users.length;i++){
+                       var user = users[i];
+                      
+                         var id = user.id;
+                         var name= user.name;
+                         var username = user.username;
+                         var email = user.email;
+                         var phone = user.phone;
+                      tbody  = tbody + "<tr>" + "<td>"+id+"</td>" +"<td>"+name+"</td>"+"<td>"+username+"</td>"+"<td>"+email+"</td>"+"<td>"+phone+"</td>"+ "</tr>"
+                  }
+                 
+                  tobdyRef.innerHTML= tbody;
+             }
+
+             function createTableHead(object){
+                      
+                let headers = Object.keys(object);
+                console.log(headers);
+                let tableHead = "<th>"+headers[0]+"</th>"+"<th>"+headers[1]+"</th>"+"<th>"+headers[2]+"</th>"+"<th>"+headers[3]+"</th>"+"<th>"+headers[5]+"</th>";
+                document.getElementById("tablehead").innerHTML = tableHead;
+                 
+             }
+          </script>
+
+     </body>
+</html>

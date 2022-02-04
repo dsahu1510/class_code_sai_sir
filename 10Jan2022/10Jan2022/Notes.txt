@@ -1,0 +1,46 @@
+Jump Statements:
+
+break, return and continue 
+
+break is used to terminate a block where as return is used to terminate a function.
+
+
+
+function f1(){
+    var a=100;
+
+     if(a < 200){
+          console.log(a);
+        return;
+     }
+     console.log(a+200);
+}
+f1();
+
+
+
+for(var i=0;i<10;i++){
+      if(i == 2){
+          continue;
+      }
+    console.log(i);
+}
+
+var array= ["sai","kiran","rajesh","anil","venkat"];
+
+// Sai is available in the list or not 
+
+// "Sai" is duplicated in the array.
+
+
+var array= ["Sai","kiran","rajesh","anil","venkat","Sai","kiran","rajesh"];
+
+// Remove duplicates
+
+Hint:  array.includes("Sai") // true or false 
+
+array.push()
+
+
+
+

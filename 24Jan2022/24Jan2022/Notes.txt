@@ -1,0 +1,105 @@
+Object:
+
+Any realtime entity is an object. 
+
+Object contains key value pairs.
+
+syntax:
+
+var obj= {
+    key: value
+}
+
+
+var employee = {
+     ename:"ravi",
+     address: "hyd"
+}
+
+console.log(employee.ename);
+console.log(employee.address);
+
+Object properties:
+
+
+var employee = {
+     ename:"ravi",
+     address: "hyd",
+     desg: "developer"
+}
+
+var employeeArr = Object.keys(employee);
+
+console.log(employeeArr);
+
+console.log(Object.values(employee));
+
+
+var company = {
+    name: "DigitalLync"
+}
+
+var employee = Object.create(company)
+
+employee.ename="Sai";
+employee.name="ram";
+employee.id=109;
+employee.address="hyd";
+console.log(employee);
+console.log(employee.name);
+
+console.log(company.address);
+
+
+// const config= {
+//     port_no:2022,
+//     url:"http://www.abc.com"
+// } 
+// config.port_no=1098;
+// console.log(config);
+
+// /*
+
+//    freeze:
+
+// */
+
+ var config = Object.freeze({
+    port_no:2022,
+    url:"http://www.abc.com"
+});
+
+config.port_no =9012;
+config.xyz =898;
+console.log(config);
+
+this keyword:
+
+this refers to current object.
+
+var employee1 = {
+          name: "kiran",
+          address: "hyderabad",
+          getDetails: function(){
+                return this.name + "\t" + this.address;
+          }
+}
+console.log(employee1.getDetails());
+
+
+function Customer(name, accno, balance) {
+      this.name= name;
+      this.accno = accno;
+      this.balance = balance;
+      this.deposit = function(amount){
+             this.balance = this.balance + amount;
+      } 
+}
+var cust1 = new Customer("kiran", 101, 10000);
+var cust2 = new Customer("raj", 102, 20000);
+console.log(cust1.balance);
+cust1.deposit(200);
+console.log(cust1.balance);
+cust2.deposit(9000);
+console.log(cust2.balance);
+

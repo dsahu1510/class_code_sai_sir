@@ -1,0 +1,136 @@
+Function:
+
+A function is a block of code which takes an input, process it and 
+provides an output.
+
+function function_name(parameters){
+    // code
+}
+
+function getData(name){
+    console.log("details of "+name);
+}
+getData("sai");
+
+
+
+There are 4 ways to represent a function.
+
+1. function with args and with return type 
+
+//  function with parameters and with return type 
+  function authenticate(otp){
+      if(otp == 1234){
+            return true;
+      }
+      else
+      {
+           return false;
+      }
+  }
+  var result = authenticate(1234);
+  console.log(result);
+
+
+  code:
+
+  <html>
+    <head>
+
+    </head>
+
+     <body>
+            <form>
+                Email: <input type="text" id="email" placeholder="enter emailid">
+                 <button onclick="forgotPassword()">Submit</button>
+            </form>
+
+             <script>
+                function forgotPassword(){
+                      event.preventDefault();
+                      var email = document.getElementById("email").value;
+                     var result = sendEmail(email); // 
+                      if(result){
+                          alert("email sent");
+                      }
+                      else{
+                          alert("email not sent");
+                      }
+                }
+
+                function sendEmail(emailId){
+                      return true;
+                }
+             
+             </script>
+
+     </body>
+</html>
+
+2. function without parameters and with return type 
+
+
+  function getScore(){
+      return  "130/1";
+  }
+   var score = getScore();
+   console.log(score);
+
+
+   <html>
+    <head>
+
+    </head>
+
+     <body>
+                 <button onclick="getScore()">Get Score</button>
+
+                  <h1 id="score"></h1>
+
+             <script>
+                function getScore(){
+                     var score =  document.getElementById("score");
+                    score.innerHTML =  getCurrentScore();
+
+                }
+
+                function getCurrentScore(){
+                    return "130/1";
+                }
+
+             
+             </script>
+
+     </body>
+</html>
+
+
+3. function with parameters and without return type 
+
+
+
+  function isAdmin(username){
+     if(username == "sai"){
+         console.log(username+ " is an admin");
+     }
+     else
+     {
+        console.log(username+ " is not an admin");
+     }
+  }
+
+    isAdmin("sai");
+
+
+4. function wihtout parameters and without return type :
+
+  function  forgotPassword(){
+
+      //code
+  }
+
+
+Anonymous function:
+
+
+

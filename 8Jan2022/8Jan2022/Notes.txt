@@ -1,0 +1,219 @@
+Iterative Statements:
+
+while:
+
+ while(test-condition){
+
+     // code
+ }
+
+
+
+var i=1;
+
+while(i <= 10){
+     console.log(i); // 1 2 3 4
+     i++;
+}
+
+
+PS:  We have a list of users in an array, display the list of users individually using 
+while loop.
+
+
+var users = ["sai", "jaishri", "deyavani","pavan","mohan"];
+
+console.log(users);
+
+var i=0;
+
+while( i < users.length){
+    console.log(users[i]);
+    i++;
+}
+
+
+var users = [{
+    name: "Sai", 
+    address: "Madhapur", 
+    mobileNumber: "9010101010"
+},
+{
+    name: "Rajesh", 
+    address: "Manikonda", 
+    mobileNumber: "9877876568"
+},
+{
+    name: "Devayani", 
+    address: "Hyderabad", 
+    mobileNumber: "0401221232"
+},
+{
+    name: "Jaishri", 
+    address: "US", 
+    mobileNumber: "+9697R467811"
+}];
+
+console.log(users);
+
+var i=0;
+
+while( i < users.length){
+    console.log(users[i].name);
+    console.log(users[i].address);
+    console.log(users[i].mobileNumber);
+    console.log("---------------------------------")
+    i++;
+}
+
+
+
+<html>
+    <head>
+
+    </head>
+
+     <body>
+
+           <ul id="users">
+
+             
+           </ul>
+
+          <script>   
+var users = [{
+    name: "Sai", 
+    address: "Madhapur", 
+    mobileNumber: "9010101010"
+},
+{
+    name: "Rajesh", 
+    address: "Manikonda", 
+    mobileNumber: "9877876568"
+},
+{
+    name: "Devayani", 
+    address: "Hyderabad", 
+    mobileNumber: "0401221232"
+},
+{
+    name: "Jaishri", 
+    address: "US", 
+    mobileNumber: "+9697R467811"
+}];
+
+var index = 0;
+var usersList="";
+   while(index < users.length){
+           var user = users[index];
+            var userDetails = "<li>"+ user.name + "    "+ user.address + "    "+ user.mobileNumber + "</li>";
+             usersList = usersList + userDetails;
+            index++;
+
+   }
+   console.log(usersList);
+
+   document.getElementById("users").innerHTML = usersList;
+            
+          </script>
+
+     </body>
+</html>
+
+
+
+ex-2:
+
+<html>
+    <head>
+
+    </head>
+
+     <body>
+
+           <ul id="users">
+
+             
+           </ul>
+
+          <script>   
+var users = [{
+    name: "Sai", 
+    address: "Madhapur", 
+    mobileNumber: "9010101010"
+},
+{
+    name: "Rajesh", 
+    address: "Manikonda", 
+    mobileNumber: "9877876568"
+},
+{
+    name: "Devayani", 
+    address: "Hyderabad", 
+    mobileNumber: "0401221232"
+},
+{
+    name: "Jaishri", 
+    address: "US", 
+    mobileNumber: "+9697R467811"
+}];
+
+var index = 0;
+var usersList="";
+   while(index < users.length){
+           var user = users[index];
+            var userDetails = "<li>"+ user.name + "  <br>   "+ user.address + "  <br>   "+ user.mobileNumber + "</li>" + "<br>";
+             usersList = usersList + userDetails;
+            index++;
+
+   }
+   console.log(usersList);
+
+   document.getElementById("users").innerHTML = usersList;
+            
+          </script>
+
+     </body>
+</html>
+
+
+
+do-while:
+
+syntax:
+
+   do{
+
+   // code
+
+   }while(test-condition);
+
+
+
+var users=[];
+
+var index =0;
+do{
+   if(users.length == 0){
+    users= ["sai", "kiran", "Ravi", "rajesh"];
+    console.log("data loading finished");
+   }
+   console.log(users[index]);
+   index++;
+
+}while(index < users.length)
+
+
+
+for-loop:
+
+
+syntax: 
+
+
+for( initialization ; test-condition ; inc /dec){
+    
+    //code
+}
+
+

@@ -1,0 +1,39 @@
+<html>
+    <head>
+
+    </head>
+     <body>
+
+         <form>
+
+             <input type="text" id="username">
+             <input type="text" name="firstname" placeholder="firstname">
+
+             <p class="theme1">This is P</p>
+             <h2 class="theme1" >This is h2</h2>
+
+              <button onclick="store()">Submit</button>
+
+         </form>
+
+          <script>
+          
+             document.getElementById("username").placeholder="enter username";
+
+             function store(){
+                 event.preventDefault();
+
+                console.log(document.getElementById("username").value);
+                console.log(document.getElementsByName("firstname"));
+                console.log(document.getElementsByClassName("theme1"));
+                console.log(document.getElementsByTagName("input"));
+
+                  console.log(document.querySelector("#username"));
+                  console.log(document.querySelectorAll("input"));
+
+             }
+
+          </script>
+
+     </body>
+</html>

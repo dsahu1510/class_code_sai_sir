@@ -1,0 +1,122 @@
+DOM:
+
+Document Object Model which is used to provide dynamic nature to the 
+web pages.
+
+Methods:
+
+<html>
+    <head>
+
+    </head>
+     <body>
+
+         <form>
+
+             <input type="text" id="username">
+             <input type="text" name="firstname" placeholder="firstname">
+
+             <p class="theme1">This is P</p>
+             <h2 class="theme1" >This is h2</h2>
+
+              <button onclick="store()">Submit</button>
+
+         </form>
+
+          <script>
+          
+             document.getElementById("username").placeholder="enter username";
+
+             function store(){
+                 event.preventDefault();
+
+                console.log(document.getElementById("username").value);
+                console.log(document.getElementsByName("firstname"));
+                console.log(document.getElementsByClassName("theme1"));
+                console.log(document.getElementsByTagName("input"));
+
+                  console.log(document.querySelector("#username"));
+                  console.log(document.querySelectorAll("input"));
+
+             }
+
+          </script>
+
+     </body>
+</html>
+
+navigation:
+
+<html>
+    <head>
+
+    </head>
+
+     <body id="body">
+           <div>
+                 <div>
+                       <p></p>
+                 </div>
+           </div>
+
+            <script>
+            
+document.getElementById("body").firstChild.nextSibling.firstChild.nextSibling.firstChild.nextSibling.innerHTML ="Hello! I am dynamic";
+
+            </script>
+     </body>
+</html>
+
+
+
+<html>
+    <head>
+
+    </head>
+
+     <body>
+
+         <script>
+         
+           
+                var form = document.createElement("form");
+                console.log(form);
+
+                 var username = document.createElement("input");
+                 username.id ="username";
+                 username.placeholder ="enter username here";
+                 username.type="text";
+                 console.log(username);
+
+                 var password = document.createElement("input");
+                 password.id ="password";
+                 password.placeholder ="enter password here";
+                 password.type="password";
+                 console.log(password);
+
+                 var label1 = document.createElement("label");
+                 label1.innerHTML="Enter username"
+                 var label2 = document.createElement("label");
+                 label2.innerHTML="Enter password"
+
+                 var br = document.createElement("br");
+                form.appendChild(label1);
+                 form.appendChild(username);
+                 form.appendChild(br);
+                 form.appendChild(br);
+                 form.appendChild(br);
+                 form.appendChild(label2);
+                 form.appendChild(password);
+
+                 console.log(form);
+
+                 document.querySelector("body").appendChild(form);
+
+                 
+
+         
+         </script>
+
+     </body>
+</html>
+

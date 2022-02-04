@@ -1,0 +1,65 @@
+Closures:
+
+Closure is a scope that gets formed whenever we write a function inside 
+another function.
+
+
+The closure helps us in accessing the outer function's resources inside an 
+inner function.
+
+
+function outer(){
+    var a=10,b=20;
+
+     function inner(){
+         console.log(a);
+         console.log(b);
+     }
+    // inner();
+    return inner;
+}
+var innerFunc = outer();
+console.log(innerFunc);
+innerFunc();
+
+
+/*
+function outer(){
+    var a=10,b=20;
+
+     function inner(){
+         console.log(a);
+         console.log(b);
+     }
+    // inner();
+    return inner;
+}
+VH:
+
+  OUTER - EXECUTION CONTEXT 
+
+  {
+       var a, b,inner; 
+  }
+
+*/
+
+
+
+Methods of Arrays:
+
+
+var arr= [10,20,30,40,50,60];
+arr.push(70);
+arr.unshift(5);
+arr.pop();
+arr.shift();
+var index = arr.indexOf(30);
+arr.splice(index,1);
+arr.reverse();
+console.log(arr);
+
+
+
+PS: find the sum of the elements of an array.
+

@@ -1,0 +1,133 @@
+IIFE:
+
+Immeditately Invoked Function Expressions  can also be called as 
+self invoking functions.
+
+syntax:
+
+  (function(){
+
+  })();
+
+
+(function(){
+    console.log("IIFE");
+})();
+
+
+(function(){
+    console.log("IIFE 1");
+})();
+
+(function(){
+    console.log("IIFE 2");
+})();
+
+
+(function(){
+    console.log("IIFE 3");
+})();
+
+
+call:
+
+
+
+ var obj1= {
+     firstName:"ravi",
+     lastName: "kumar",
+     address: "hyderabad",
+      getDetails :  function(){
+          return this.firstName + "\t"+ this.lastName+ "\t"+ this.address;
+      }
+ }
+ //console.log(obj1.getDetails());
+ var obj2= {
+    firstName:"rajesh",
+    lastName: "reddy",
+    address: "hyderabad"
+}
+
+var obj3= {
+    firstName:"anil",
+    lastName: "rao",
+    address: "secbad"
+}
+
+ console.log(obj1.getDetails.call(obj2));
+ console.log(obj1.getDetails.call(obj3));
+
+
+
+difference between apply and call:
+
+
+ var obj1= {
+     firstName:"ravi",
+     lastName: "kumar",
+     address: "hyderabad",
+      getDetails :  function(a,b,c){
+          return this.firstName + "\t"+ this.lastName+ "\t"+ this.address+ "\t"+ a+"\t"+ b+"\t"+ c;
+      }
+ }
+ //console.log(obj1.getDetails());
+ var obj2= {
+    firstName:"rajesh",
+    lastName: "reddy",
+    address: "hyderabad"
+}
+
+var obj3= {
+    firstName:"anil",
+    lastName: "rao",
+    address: "secbad"
+}
+
+var arr=[10,20,30];
+
+ console.log(obj1.getDetails.call(obj2,arr[0],arr[1],arr[2]));
+
+ console.log(obj1.getDetails.apply(obj2,arr));
+ //console.log(obj1.getDetails.call(obj3));
+
+
+Call By Value and Call by Reference:
+
+Call by value:
+
+All primitive types fall under call by value
+
+   var x=1000;
+
+   function f1(m){
+   console.log(m); //
+   m=0;
+   }
+
+   f1(x);
+   console.log(x); //
+
+
+   Call by reference:
+
+   All non primitive types fall under call by reference.
+
+
+
+
+
+
+   var obj= {
+          name:"ravi"
+   };
+
+   function f1(m){
+   console.log(m); //
+   m.age=21;
+   m.name="anil";
+   }
+
+   f1(obj); // call by reference
+   console.log(obj); //
+
+   PSMT: Implement call by reference using arrays.

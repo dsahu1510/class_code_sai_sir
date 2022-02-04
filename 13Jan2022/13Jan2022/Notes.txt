@@ -1,0 +1,66 @@
+Anonymous Functions:
+
+A function without a name is known as Anonymous function.
+
+In general, A javascript function can accept primitive type, non primitive 
+types and also functions as arguments.
+
+function f1(a){
+    a();
+}
+
+
+
+f1(function(){
+    console.log("anonmymous function");
+})
+
+
+function expression:
+
+If a variable can refer a function as a value, then it is known as 
+function expression.
+
+function f1(a){
+    a();
+}
+
+function f2(b){
+  b();
+}
+
+var anonymous = function(){ // function expression
+    console.log("anonmymous function hghfhsdgsfg");
+}
+f1(anonymous);
+
+f2(anonymous)
+
+
+
+
+
+var arr= [10,200,78,123,145];
+
+arr.forEach(function(element){
+   console.log(element);
+})
+
+
+function myOwnForEach(callback){
+        for(var i=0;i<arr.length;i++){
+            callback(arr[i]);
+        }
+}
+
+console.log(".......................")
+myOwnForEach(function(x){
+    console.log(x);
+})
+
+There are 2 types of operations,
+
+1. Sync 
+
+2. Async
+

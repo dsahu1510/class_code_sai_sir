@@ -1,0 +1,66 @@
+<html>
+    <head>
+
+    </head>
+
+     <body>
+
+           <ul id="users">
+
+             
+           </ul>
+
+          <script>   
+var users = [{
+    name: "Sai", 
+    address: "Madhapur", 
+    mobileNumber: "9010101010"
+},
+{
+    name: "Rajesh", 
+    address: "Manikonda", 
+    mobileNumber: "9877876568"
+},
+{
+    name: "Devayani", 
+    address: "Hyderabad", 
+    mobileNumber: "0401221232"
+},
+{
+    name: "Jaishri", 
+    address: "US", 
+    mobileNumber: "+9697R467811"
+}];
+
+var index = 0;
+var usersList="";
+   while(index < users.length){
+           var user = users[index];
+            var userDetails = "<li>"+ user.name + "  <br>   "+ user.address + "  <br>   "+ user.mobileNumber + "</li>" + "<br>";
+             usersList = usersList + userDetails;
+            index++;
+
+   }
+   console.log(usersList);
+
+   document.getElementById("users").innerHTML = usersList;
+            
+          </script>
+
+     </body>
+</html>
+
+
+// Part 1 (Introduction to HTML , Tags, Attributes,Editor,Document Structure)
+
+https://vimeo.com/656439546
+
+
+/*
+
+MOM:
+
+
+
+
+*/

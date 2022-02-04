@@ -1,0 +1,25 @@
+6Jan2022
+Complete Operators
+
+7Jan2022
+typeOf,
+instanceOf,
+Control Statements,
+	1. sequential
+	  if,
+	  if-else,
+	  switch
+
+8Jan2022
+iterative stat.,
+
+13Jan2022
+Function expression,
+callback function,
+forEach(),
+sync async,
+Ajax,
+https
+
+18Jan2022
+First Clss Functions
